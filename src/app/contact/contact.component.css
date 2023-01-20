@@ -1,0 +1,37 @@
+.footer{
+  margin-top: 10%;
+  background: #ddd;
+}
+
+.contact{
+  display: block;
+  margin: auto;
+  position: relative;
+  top: -65px;
+  padding: 25px;
+  width: 60%;
+  background: #112;
+  text-align: center;
+  color: #ddd;
+}
+
+.contact h2{
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.nav{
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav div{
+margin: 5% 0 ;
+text-align: center;
+}
+
+.nav img{
+  width: 25%;
+}

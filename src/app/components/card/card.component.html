@@ -1,0 +1,12 @@
+<a href = "{{data.link}}">
+  <div class="card">
+   <div class="img">
+     <iframe [src]=" data.link | safe:'resourceUrl'" frameborder="0" allowfullscreen class="iframe" scrolling="no"></iframe>
+   </div>
+   <div class="text">
+     <h3 class="title">{{data.title}}</h3>
+     <p class="epigraph">{{data.epigraph}}</p>
+   </div>
+   <p>{{data.link}}</p>
+ </div>
+</a>

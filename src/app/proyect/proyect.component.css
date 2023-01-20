@@ -1,0 +1,14 @@
+.container{
+  display: flex;
+  justify-content: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding: 10%;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, 30vw);
+  grid-template-rows: auto;
+  grid-gap: 7vw;
+}

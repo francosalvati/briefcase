@@ -1,0 +1,28 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  height: 100%;
+  background: #112;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img{
+  position: relative;
+  top: -50px;
+  display: flex;
+}
+
+.img img{
+  width: 150px;
+}
+
+.img .img__angular img{
+ width: 200px;
+}

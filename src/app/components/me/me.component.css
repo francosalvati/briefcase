@@ -1,0 +1,108 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  position: relative;
+  background: #112;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.perfil{
+  position: relative;
+  left: 5%;
+  width: 40%;
+  height: 80%;
+  background: #283961;
+  z-index: 100;
+}
+
+.perfil .perfil__img{
+  height: 65%;
+}
+
+.perfil img{
+  object-fit: cover;
+  position: relative;
+  width: 120%;
+  height: 100%;
+  left: 20px;
+  top: -20px;
+  padding: -5px;
+  opacity: 1;
+  border: 4px solid #112;
+}
+
+.text {
+  position: relative;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.text h2{
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.2rem;
+  top: -15px;
+  color: #112;
+}
+
+hr{
+  border: solid 1px #112;
+  margin-top: 20px;
+  opacity: .5;
+}
+
+.text p {
+  padding-top: 20px;
+  font-size: .7rem;
+}
+
+.text p span{
+  font-weight: 700;
+  float: right;
+  line-height: 2;
+}
+
+.info{
+  position: relative;
+  top: 4%;
+  width: 50%;
+  height: 65%;
+  background: #ffc587;
+  z-index: 50;
+}
+
+.info .title{
+  background: #fff;
+  height: 20%;
+  width: 110%;
+}
+
+.info .title h2{
+  color: #112;
+  text-align: end;
+  line-height: 2;
+  padding: 1rem;
+  font-weight: 700;
+}
+
+.info .text{
+  text-align: center;
+  float: inline-end;
+  padding-left: 30%;
+}
+
+.base{
+  background: #fff;
+  height: 20%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+}

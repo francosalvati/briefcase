@@ -1,0 +1,92 @@
+
+.navb {
+  position: sticky;
+  width: 80px;
+  height: 300px;
+  background: #112;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.navb::before{
+  content: '';
+  position: absolute;
+  background: #ffc587;
+  width: 80%;
+  height: 110%;
+  border-radius: 10px;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0%{
+    transform: rotate(0deg) ;
+  }
+  100%{
+    transform: rotate(-360deg);
+  }
+}
+
+.navb::after{
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #112;
+  border-radius: 9px;
+}
+
+.navb ul {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+}
+
+.navb ul li{
+  position: relative;
+  width: 100px;
+  height: 70px;
+  list-style: none;
+  z-index: 50;
+}
+
+.navb ul li a{
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #9ebbff;
+  font-size: .7rem;
+  width: 100%;
+}
+
+.navb ul li a .icon{
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 2rem;
+  transition: .5s;
+}
+
+.navb ul li:hover a .icon{
+  cursor: pointer;
+  transform: scale(0);
+}
+.navb ul li a .text{
+  position: absolute;
+
+  transition: 1s;
+  transform: scale(0);
+}
+
+.navb ul li:hover a .text{
+  transform:scale(1);
+}
+
+
