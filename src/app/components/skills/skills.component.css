@@ -1,28 +1,139 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-.container{
+.container {
   height: 100%;
   background: #112;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
-.img{
+.img {
   position: relative;
-  top: -50px;
+  top: -2%;
   display: flex;
 }
 
-.img img{
+.img img {
   width: 150px;
 }
 
-.img .img__angular img{
- width: 200px;
+.img .img__angular img {
+  width: 200px;
+  animation: angular 10s infinite linear;
+  transform: scale(0);
+}
+
+.img .img__html img {
+  animation: html 10s ease infinite;
+}
+
+.img .img__css img {
+  animation: css 10s ease infinite;
+}
+
+@keyframes angular {
+  0% {
+    transform: scale(0);
+  }
+
+  10% {
+    transform: scale(1.2);
+  }
+
+  20% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes html {
+  0% {
+    transform: translateX(100vh);
+  }
+
+  10% {
+    transform: translateX(4px);
+  }
+
+  100% {
+    transform: translateX(4px);
+  }
+}
+
+@keyframes css {
+  0% {
+    transform: translateX(-100vh);
+  }
+
+  10% {
+    transform: translateX(-1px);
+  }
+
+  100% {
+    transform: translateX(-1px);
+  }
+}
+
+
+.list {
+  width: 80%;
+  margin-top: 5%;
+  color: #ffc587;
+}
+
+.list ul {
+  display: flex;
+}
+
+.list ul li {
+  text-align: center;
+  list-style: none;
+  width: 25%;
+  animation: impar 10s ease infinite;
+}
+
+
+@keyframes impar{
+  0% {
+    transform: translatey(10px);
+  }
+
+  10%, 40% {
+    transform: translatey(-10px);
+  }
+
+  20%, 50% {
+    transform: translatey(0);
+  }
+
+  30% {
+    transform: translatey(10px);
+  }
+
+
+  100% {
+    transform: translatey(0);
+  }
+}
+
+
+
+.list ul li p {
+  font-size: 1.3rem;
+}
+
+.list ul li p ion-icon{
+  padding-bottom: 2rem;
+  font-size: 3rem;
+  line-height: 1;
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  constructor( private _snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
   }
 
+
+  copy(){
+    navigator.clipboard.writeText('francosalvati98@gmail.com');
+    this.openSnackBar();
+  }
+
+  openSnackBar() {
+    this._snackBar.open('gmail copiado', 'ok');
+  }
 }

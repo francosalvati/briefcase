@@ -15,24 +15,9 @@ export class ProyectsService {
   constructor() {
     this.proyects = [
     {
-      title: 'continuara',
+      title: 'continuara..',
       link: '',
-      epigraph: 'Faltan proyectos',
-    },
-    {
-      title: 'continuara',
-      link: '',
-      epigraph: 'Faltan proyectos',
-    },
-    {
-      title: 'continuara',
-      link: '',
-      epigraph: 'Faltan proyectos',
-    },
-    {
-      title: 'continuara',
-      link: '',
-      epigraph: 'Faltan proyectos',
+      epigraph: 'Mas proyectos en camino',
     },
     ]
   }

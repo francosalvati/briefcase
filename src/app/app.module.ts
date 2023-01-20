@@ -13,6 +13,11 @@ import { MeComponent } from './components/me/me.component';
 import { CardComponent } from './components/card/card.component';
 import { SafePipe } from './pipes/safe.pipe';
 
+//angular material
+import { MatButtonModule } from '@angular/material/button';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,11 +29,15 @@ import { SafePipe } from './pipes/safe.pipe';
     SkillsComponent,
     MeComponent,
     CardComponent,
-    SafePipe
+    SafePipe,
+
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot()
+    IonicModule.forRoot(),
+    MatSnackBarModule,
+    MatButtonModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

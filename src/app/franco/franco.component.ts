@@ -30,17 +30,17 @@ export class FrancoComponent implements OnInit {
   }
 
   setTime(disabled: boolean) {
-    // this.timer = interval(1000);
-    // this.disabled = true
-    // if(disabled == false){
-    //   this.sub =  this.timer.subscribe((n: any) => {
-    //     console.log(this.contador)
-    //     this.contador++;
-    //     if(this.contador % 10 == 0 && this.contador != 0){
-    //       this.changeClass(this.changer);
-    //     }
-    //   });
-    // }
+    this.timer = interval(1000);
+    this.disabled = true
+    if(disabled == false){
+      this.sub =  this.timer.subscribe((n: any) => {
+        console.log(this.contador)
+        this.contador++;
+        if(this.contador % 10 == 0 && this.contador != 0){
+          this.changeClass(this.changer);
+        }
+      });
+    }
   }
 
   stop(){

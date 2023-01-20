@@ -60,13 +60,14 @@ hr{
 
 .text p {
   padding-top: 20px;
-  font-size: .7rem;
+  font-size: .8rem;
+  margin: 0;
 }
 
 .text p span{
   font-weight: 700;
   float: right;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .info{
@@ -86,16 +87,24 @@ hr{
 
 .info .title h2{
   color: #112;
+  padding-right: 1rem;
+  margin: 0;
   text-align: end;
   line-height: 2;
-  padding: 1rem;
   font-weight: 700;
+  font-size: 2rem;
 }
 
 .info .text{
-  text-align: center;
+  margin: 0;
+  text-align: end;
   float: inline-end;
-  padding-left: 30%;
+  padding-left: 35%;
+
+}
+.info .text p {
+  font-size: .8rem;
+  padding-top: 5px;
 }
 
 .base{
